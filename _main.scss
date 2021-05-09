@@ -1,0 +1,179 @@
+
+
+.card {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ width: 85vw;
+ margin: 0 auto;
+    .card-wrapper
+    {
+        background-color: $desaBlue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 8px;
+        max-width: 654px;
+        
+
+        .card-img {
+            position: relative;
+            max-width: 654px;
+            max-height: 480px;
+            .card-filter {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $violet;
+                opacity: 0.5;
+                border-radius: 8px 8px 0px 0px;
+            }
+            img {
+                max-width: 654px;
+                width: 85vw;
+                height: 100%;
+                border-radius: 8px 8px 0px 0px;
+            }
+        }
+
+        .card-text {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-weight: $bold;
+                span {
+                    color: $violet;
+                }
+            }
+            p {
+                margin: 15px 0px 35px 0px;
+                max-width: 40ch;
+                font-size: $normalMobile;
+                color: $transpWhite2;
+                line-height: 20px;
+            }
+            .numbers {
+                h4 {
+                    font-size: $bigMobile;
+                    margin-bottom: 20px;
+                    span {
+                        font-size: $smallMobile;
+                        color: $transpWhite2;
+                        text-transform: uppercase;
+                    }
+                }
+                h4:last-child {
+                    margin-bottom: 0px;
+                }
+                
+            }
+        }
+        .card-pc {
+            display: none;
+        }
+
+
+    }
+
+
+}
+@media(min-width:1200px) {
+    .card {
+        .card-wrapper {
+            flex-direction: row;
+            max-width: 1080px;
+
+            .card-img {
+                width: 540px;
+                height: 446px;
+                .card-filter {
+                    border-radius: 0px 8px 8px 0px;
+                }
+                img {
+                    border-radius: 0px 8px 8px 0px;
+                    width: 540px;
+                    height: 446px;
+                }
+            }
+
+            .card-text {
+                padding: 60px;
+                text-align: start;
+                width: 540px;
+                height: 446px;
+                align-items: flex-start;
+                
+                h1 {
+                    max-width: 17ch;
+                    font-size: $bigPc;
+                }
+
+                p {
+                    margin-top: 30px;
+                    font-size: $normalPc;
+                    max-width: 40ch;
+                    line-height: 25px;
+                }
+
+                .numbers {
+                    display: flex;
+                    height: 100%;
+                    align-items: flex-end;
+                    
+                    h4 {
+                        font-size: $normalBig;
+                        margin-right: 50px;
+                        margin-bottom: 0px;
+                        span {
+                            font-size: $smallPc;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                }
+            }
+
+            .card-mobile {
+                display: none;
+            }
+
+            .card-pc {
+                display: block;
+            }
+
+        }
+    }
+
+}
+
+@media(max-width: 1200px) and (min-width: 770px) {
+    
+    .card {
+        .card-wrapper {
+            .card-text {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: $normalPc;
+                }
+                .numbers {
+                    h4 {
+                        font-size: $bigMobile;
+                        span {
+                            font-size:  $normalMobile;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

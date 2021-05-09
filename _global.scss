@@ -1,0 +1,37 @@
+$mobile: 375px;
+$desktop: 1440px;
+$darkBlue: hsl(233, 47%, 7%);
+$desaBlue: hsl(244, 38%, 16%);
+$violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$transpWhite: hsla(0, 0%, 100%, 0.75);
+$transpWhite2: hsla(0, 0%, 100%, 0.6);
+$inter: 'Inter', sans-serif;
+$lexend: 'Lexend Deca', sans-serif;
+$smallMobile: 10px;
+$normalMobile: 13px;
+$bigMobile: 18px;
+$smallPc: 11px;
+$normalPc: 16px;
+$normalBig: 20px;
+$bigPc: 36px;
+$normal: 400;
+$bold: 700;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    // 🙂 15px
+    font-size: 93.75%;
+    font-family: $inter;
+    color: white;
+}
+
+body {
+    background-color: $darkBlue;
+}
