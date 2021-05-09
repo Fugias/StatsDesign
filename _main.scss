@@ -1,5 +1,4 @@
 
-
 .card {
  display: flex;
  align-items: center;
@@ -71,17 +70,12 @@
                 h4:last-child {
                     margin-bottom: 0px;
                 }
-                
             }
         }
         .card-pc {
             display: none;
         }
-
-
     }
-
-
 }
 @media(min-width:1200px) {
     .card {
